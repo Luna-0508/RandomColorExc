@@ -12,5 +12,9 @@ const makeRandomColor = () => {
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
 
+  if (r < 70 && g < 70 && b < 70) {
+    h1.style.color = "white";
+  }
+
   return `rgb(${r}, ${g}, ${b})`;
 };
